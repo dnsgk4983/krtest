@@ -1751,7 +1751,7 @@ header nav ul {
 }
 
 header nav ul li {
-  float: left;
+  
   margin-right: 20px;
 }
 
@@ -2330,10 +2330,6 @@ header nav.nav-light.fixed-nav {
 
 /* ** 2.04 Section Offering ** */
 .offering {
-  background: url(../img/bg-main/offering-grid.png) no-repeat bottom right, -webkit-gradient(linear, left bottom, left top, from(#0e1745), color-stop(12%, #112055), color-stop(50%, #132965), color-stop(87%, #132359), to(#131c4d));
-  background: url(../img/bg-main/offering-grid.png) no-repeat bottom right, -o-linear-gradient(bottom, #0e1745 0%, #112055 12%, #132965 50%, #132359 87%, #131c4d 100%);
-  background: url(../img/bg-main/offering-grid.png) no-repeat bottom right, linear-gradient(0deg, #0e1745 0%, #112055 12%, #132965 50%, #132359 87%, #131c4d 100%);
-  z-index: 3;
   position: relative;
 }
 
@@ -5027,6 +5023,7 @@ footer .copyright span:nth-child(1) {
 }
 #Platform{
   padding: 100px 0;
+  position: relative;
 }
 #Token{
   padding: 100px 0;
@@ -5056,16 +5053,25 @@ header nav ul {
 .sub-nav{
   display: none;
   position: absolute;
+  margin: 0;
   margin-top: 30px;
+  padding: 0;
   background: #001b57;
   z-index: 999999;
+  
 }
-.sub-nav>a{
+.sub-nav a{
+  margin: 20px 0;
   display: block;
 }
 .about-item{
   margin-top: 50px;
   justify-content: center;
+}
+@media(max-width: 767px){
+  .main-menu{
+    display: none;
+  }
 }
 /* section 02  */
 
@@ -5193,4 +5199,50 @@ padding-bottom: 5%;
 }
 .pd-t200{
   padding-top: 200px;
+}
+/* graph */
+.graph{
+  width:380px; 
+  height: 300px; 
+  border-bottom: 1px solid #cdd6f6;
+  border-left: 1px solid #cdd6f6;
+  margin: 20px auto;
+  position:relative;
+}
+.graph-bar{
+  display: inline-block;
+  position: absolute;
+  width: 30px; 
+  bottom:0; 
+  perspective:200px;
+  background: #f49842;
+  box-shadow: 1px -1px #d88a41, 
+    2px -2px #d88a41, 
+    3px -3px #d88a41,   
+    4px -4px #d88a41, 
+    5px -5px #d88a41, 
+    6px -6px #d88a41, 
+    7px -7px   #d88a41, 
+    8px -8px #d88a41, 
+    9px -9px #d88a41, 
+    10px -10px #d88a41;
+}
+.graph p{
+  position: relative;
+  z-index: 99;
+  color: #cdd6f6;
+  display: inline;
+  margin: 0 12px;
+  top: 105%;
+  left: 13%;
+}
+.graph p:last-child{
+  margin-left: 22px;
+}
+/* abit */
+.abit-text{
+  color: #555;
+}
+.abit-button, .abit-button:visited, .abit-button:focus, .abit-button:hover, .abit-button:active {
+  color: #555;  
 }
