@@ -5039,7 +5039,7 @@ header .container>.row>.col-xl-12{
   justify-content: space-between;
 }
 header .btn_small{
-  padding-top: 10px !important;
+  padding-top: 15px !important;
 }
 header nav ul {
   padding-top: 5px;
@@ -5245,4 +5245,26 @@ padding-bottom: 5%;
 }
 .abit-button, .abit-button:visited, .abit-button:focus, .abit-button:hover, .abit-button:active {
   color: #555;  
+}
+/* news area */
+.fs-12{
+  font-size: 12px;
+}
+.fs-12-m{
+  font-size: 12px;
+  display: none;
+}
+.color-change{
+  color: #00b6f3;
+  font-weight: bold;
+}
+/* blog area */
+.blog-text{
+  margin: 20px 0 0 20px;
+  color: #fff;
+}
+/* subscribe area */
+.subscribe-title{
+  margin-top: 50px;
+  color: #00b6f3;
 }
