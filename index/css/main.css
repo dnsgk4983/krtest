@@ -5242,7 +5242,7 @@ padding-bottom: 5%;
   }
 }
 
-/* platfor */
+/* platform */
 #Platform .item:nth-child(2){
   display: none;
 }
@@ -5281,6 +5281,9 @@ padding-bottom: 5%;
     width: 10px;
     height: 10px;
     top: 0;
+  }
+  #Platform{
+    padding: 100px 0;
   }
 }
 /* graph */
